@@ -7,9 +7,9 @@ This topic describes how to install and configure the Blue Medora Nozzle for PCF
 
 ##<a id='install'></a> Install and Configure Blue Medora Nozzle for PCF
 
-1. Download the product file from Pivotal Network.
+1. Download the product file from the Pivotal Network.
 
-2. Upload the product file on the Ops Manager Installation Dashboard.
+2. Upload the product file using the Ops Manager Installation Dashboard.
 
 3. Click **Add** next to the uploaded Blue Medora Nozzle for PCF tile in the Ops Manager **Available Products** view to add it to your staging area.
 
@@ -23,7 +23,7 @@ Complete the following fields:
 * **Traffic Controller URL:** The URL for the Traffic Controller. For more information, refer to the [documentation](https://docs.cloudfoundry.org/loggregator/architecture.html#firehose).
 * **Subscription ID:** The subscription ID of the nozzle. To find out more about subscription IDs and nozzle scaling, refer to the [documentataion](https://docs.cloudfoundry.org/loggregator/log-ops-guide.html#scaling-nozzles).
 
-**NOTE:** Check the **Insecure SSL Skip Verify** box if you are NOT using SSL.
+<p class="note"><strong>Note</strong>: Check the **Insecure SSL Skip Verify** box if you are NOT using SSL.</p>
 
 * **Firehose Idle Timeout Seconds:** The amount of time, in seconds, the connection to the Firehose can be idle before disconnecting.
 * **Metric Cache Duration:** The amount of time, in seconds, the RESTful API web server will cache metric data. The higher this duration, the less likely the data will be correct for a certain metric as it could hold stale data.
@@ -39,8 +39,8 @@ Complete the following fields:
 * **UAA User:** The UAA username that has access to read from Loggregator Firehose.
 * **UAA Password:** The password associated with the UAA username.
 
-**NOTE:** Check the **Disable Access Control** box if you do NOT want Access Control enabled.
+<p class="note"><strong>Note</strong>: Check the **Disable Access Control** box if you do NOT want Access Control enabled.</p>
 
 8. Click **Save**.
 
-9. Return to the Ops Manager Installation Dashboard and click **Apply Changes** to install the Blue Medora Nozzle for PCF tile.
+9. Return to the Ops Manager Installation Dashboard, then click **Apply Changes** to install the Blue Medora Nozzle for PCF tile.

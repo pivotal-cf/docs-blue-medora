@@ -17,7 +17,7 @@ sections:
   - repository:
       name: docs-content
     directory: myservice
-    subnav_template: myservice_subnav.erb       
+    subnav_template: blue_medora_subnav.erb       
 
 template_variables:                             # optional
 

@@ -16,20 +16,20 @@ This topic describes how to install and configure the Blue Medora Nozzle for VMw
 5. From the **Settings** tab, click **Nozzle**.
   <%= image_tag("images/nozzle_properties.png") %>
   Complete the following fields:
-  * **Traffic Controller URL:** The URL for the Traffic Controller. For more information, refer to the [Firehose](http://docs.pivotal.io/pivotalcf/loggregator/architecture.html#firehose) section of the Loggregator documentation.
   * **Subscription ID:** The subscription ID of the nozzle. To find out more about subscription IDs and nozzle scaling, refer to the [Scaling Nozzles] (https://docs.pivotal.io/pivotalcf/loggregator/log-ops-guide.html#scaling-nozzles) section of the _Loggregator Guide for Cloud Foundry Operators_ topic.
     <p class="note"><strong>Note</strong>: Check the <strong>Insecure SSL Skip Verify</strong> box if you are not using SSL.</p>
   * **Firehose Idle Timeout Seconds:** The amount of time, in seconds, that the connection to the Firehose can be idle before disconnecting.
   * **Metric Cache Duration:** The amount of time, in seconds, that the RESTful API web server will cache metric data. The higher this duration, the less likely the data will be correct for a certain metric as it could hold stale data.
+  Optional:
+  * **RLP URL Override:** Override the automatically detected URL for the Reverse Log Proxy.
 
 6. Click **Save**.
 
 7. From the **Settings** tab, click **UAA Client**.
   <%= image_tag("images/uaa_client_properties.png") %>
   Complete the following fields:
-    * **URL of UAA Server:** The UAA login URL of the Cloud Foundry deployment.
-    * **UAA User:** The UAA username that has access to read from the Loggregator Firehose.
-    * **UAA Password:** The password associated with the UAA username.
+    * **UAA User:** UAA client that has access to read from the Loggregator Firehose.
+    * **UAA Password:** The password associated with the UAA client.
       <p class="note"><strong>Note</strong>: Check the <strong>Disable Access Control</strong> box if you do not want Access Control enabled.</p>
 
 8. Click **Save**.

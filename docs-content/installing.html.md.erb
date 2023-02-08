@@ -19,15 +19,15 @@ This topic describes how to install and configure the Blue Medora Nozzle for VMw
 
   Complete the following fields:
 
-  * **Subscription ID:** The subscription ID of the nozzle. To find out more about subscription IDs and nozzle scaling, refer to the [Scaling Nozzles](https://docs.pivotal.io/pivotalcf/loggregator/log-ops-guide.html#scaling-nozzles) section of the _Loggregator Guide for Cloud Foundry Operators_ topic.
+    * **Subscription ID:** The subscription ID of the nozzle. To find out more about subscription IDs and nozzle scaling, refer to the [Scaling Nozzles](https://docs.pivotal.io/pivotalcf/loggregator/log-ops-guide.html#scaling-nozzles) section of the _Loggregator Guide for Cloud Foundry Operators_ topic.
 
-    <p class="note"><strong>Note</strong>: Check the <strong>Insecure SSL Skip Verify</strong> box if you are not using SSL.</p>
+      <p class="note"><strong>Note</strong>: Check the <strong>Insecure SSL Skip Verify</strong> box if you are not using SSL.</p>
 
-  * **Firehose Idle Timeout Seconds:** The amount of time, in seconds, that the connection to the Firehose can be idle before disconnecting.
+    * **Firehose Idle Timeout Seconds:** The amount of time, in seconds, that the connection to the Firehose can be idle before disconnecting.
 
-  * **Metric Cache Duration:** The amount of time, in seconds, that the RESTful API web server will cache metric data. The higher this duration, the less likely the data will be correct for a certain metric as it could hold stale data.
+    * **Metric Cache Duration:** The amount of time, in seconds, that the RESTful API web server will cache metric data. The higher this duration, the less likely the data will be correct for a certain metric as it could hold stale data.
 
-  * **Optional: RLP URL Override:** Override the automatically detected URL for the Reverse Log Proxy.
+    * **Optional: RLP URL Override:** Override the automatically detected URL for the Reverse Log Proxy.
 
 1. Click **Save**.
 
